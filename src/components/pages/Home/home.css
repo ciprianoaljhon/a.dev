@@ -1,0 +1,29 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 3rem;
+}
+#tag-line {
+  margin-top: 3.5rem;
+  font-size: 3rem;
+}
+.hero-wrapper > p {
+  font-size: var(--txt-600);
+  max-width: 733px;
+  padding: 0.3rem;
+}
+.hero-logo {
+  font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+  .hero-wrapper {
+    padding: 1rem;
+  }
+}

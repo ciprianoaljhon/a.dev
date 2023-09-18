@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Lobster&display=swap");
+:root {
+  --bg-clr: rgb(54, 54, 54);
+  --nav-clr: rgba(37, 37, 37, 0.596);
+  --txt-clr: rgb(194, 194, 194);
+  --txt-clr-2: rgb(26, 25, 25);
+  --txt-300: 0.75rem;
+  --txt-400: 1rem;
+  --txt-600: 1.25rem;
+  --txt-700: 1.5rem;
+  --txt-800: 1.75rem;
+  --txt-900: 2rem;
+  --ff-cursive-1: "Dancing Script", cursive;
+  --ff-cursive-2: "Lobster", cursive;
+}
+
+section {
+  padding-left: 6rem;
+}
+
+/* All Sections */
+.pg-container > * {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-clr);
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 0px;
+  }
+}
