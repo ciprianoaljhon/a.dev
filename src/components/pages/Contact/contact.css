@@ -1,0 +1,53 @@
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#contact > .card {
+  width: 50%;
+  background-color: var(--global-bg-clr);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#contact > .card {
+  text-align: center;
+}
+#contact h2 {
+  margin-bottom: 1rem;
+  color: var(--primary-clr);
+}
+form {
+  border-radius: 1rem;
+  display: flex;
+  gap: 0.2rem;
+  flex-direction: column;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: solid 1px var(--primary-clr);
+}
+
+form > * {
+  color: var(--txt-clr);
+  background-color: transparent;
+  padding: 0.3rem 0.3rem;
+  border: 1px solid var(--fg-clr);
+}
+form > textarea {
+  resize: vertical;
+}
+form > button {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+form > button:hover {
+  border-color: var(--primary-clr);
+  letter-spacing: 3px;
+  filter: opacity(0.9);
+}

@@ -1,44 +1,28 @@
-import React, { createContext, useState, useEffect } from "react";
 import Home from "./components/pages/Home/Home";
 import Projects from "./components/pages/Projects/Projects";
-import About from "./components/pages/About/About.jsx";
 import Contact from "./components/pages/Contact/Contact";
-import Navbar from "./components/pages/Navigation/Navbar.jsx";
 import "./global.css";
 import "./App.css";
+import { useThemeChanger } from "./hooks/customHooks";
+import About from "./components/pages/About/About.jsx";
+import Navbar from "./components/pages/Navigation/Navbar.jsx";
 
 const App = () => {
   console.log("renders");
 
-  // put the code below in ThemeContext file
+  const theme = useThemeChanger();
   //create a react memo for unnecessary render
-  const [theme, setTheme] = useState("theme-2");
-  useEffect(() => {
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
-
-    const clickHandler = () => {
-      setTheme((prevTheme) => (prevTheme === "theme-2" ? "" : "theme-2"));
-    };
-
-    window.addEventListener("click", clickHandler);
-
-    return () => {
-      window.removeEventListener("click", clickHandler);
-    };
-  }, []);
-
   return (
-    <>
+    <div id="main-container" data-theme={theme}>
       {/* <Navbar></Navbar> */}
-      <div className="pg-container" data-theme={theme}>
+
+      <div className="pg-container">
         <Home></Home>
         <Projects></Projects>
         {/* <About></About> */}
         <Contact></Contact>
       </div>
-    </>
+    </div>
   );
 };
 

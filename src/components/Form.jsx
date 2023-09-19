@@ -1,6 +1,6 @@
 import React from "react";
 import Buttons from "./Buttons";
-
+import { PaperPlaneRight } from "phosphor-react";
 const Form = () => {
   function handleSubmit(e) {
     e.preventDefault();
@@ -14,7 +14,10 @@ const Form = () => {
         rows="10"
         placeholder="Type your message here..."
       ></textarea>
-      <Buttons onClick={handleSubmit}>Submit</Buttons>
+      <Buttons onClick={handleSubmit}>
+        {/* <PaperPlaneRight></PaperPlaneRight> */}
+        Submit
+      </Buttons>
     </form>
   );
 };
