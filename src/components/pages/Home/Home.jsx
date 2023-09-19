@@ -1,6 +1,6 @@
-import React from "react";
 import Header from "./Header";
 import { Logo } from "../../../assets/Logo";
+import Buttons from "../../Buttons";
 import "./home.css";
 
 function Home() {
@@ -9,6 +9,10 @@ function Home() {
       <div className="hero-wrapper">
         <Logo className="hero-logo"></Logo>
         <Header></Header>
+        <div className="btn-grp">
+          <Buttons>Contact Me</Buttons>
+          <Buttons>Facebook</Buttons>
+        </div>
       </div>
     </section>
   );

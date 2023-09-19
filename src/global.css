@@ -9,11 +9,19 @@
 html::-webkit-scrollbar {
   display: none;
 }
+
+/* select text disable */
+html {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 body::-webkit-scrollbar {
   display: none;
 }
 body {
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
 }
 h1,
 h2,
@@ -22,9 +30,6 @@ h4,
 h5,
 h6 {
   font-family: var(--ff-cursive-1);
-}
-nav {
-  background-color: var(--nav-clr);
 }
 ul {
   list-style: none;

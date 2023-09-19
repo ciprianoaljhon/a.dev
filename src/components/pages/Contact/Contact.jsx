@@ -1,7 +1,11 @@
 import React from "react";
-
+import About from "../About/About";
 function Contact() {
-  return <section>Contact</section>;
+  return (
+    <section>
+      <About></About>
+    </section>
+  );
 }
 
 export default Contact;

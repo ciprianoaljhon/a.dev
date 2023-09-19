@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700;900&family=Lobster&display=swap");
 :root {
-  --bg-clr: rgb(54, 54, 54);
-  --nav-clr: rgba(37, 37, 37, 0.596);
-  --txt-clr: rgb(194, 194, 194);
-  --txt-clr-2: rgb(26, 25, 25);
+  --bg-clr: rgb(24, 24, 24);
+  --primary-clr: #00ffff;
+  --primary-clr-dark: #008b8b;
+  --primary-clr-light: #d1d1d1;
+  --txt-clr: rgba(255, 255, 255, 0.863);
+
+  --nav-clr: rgb(37, 37, 37);
   --txt-300: 0.75rem;
   --txt-400: 1rem;
   --txt-600: 1.25rem;
@@ -14,16 +17,33 @@
   --ff-cursive-1: "Dancing Script", cursive;
   --ff-cursive-2: "Lobster", cursive;
 }
-
+[data-theme="theme-1"] {
+}
+[data-theme="theme-2"] {
+  --primary-clr: #8b00ff;
+  --primary-clr-light: #b464ff;
+  --primary-clr-dark: #6100b3;
+}
+[data-theme="theme-3"] {
+}
+[data-theme="theme-4"] {
+}
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-clr);
+}
 section {
-  padding-left: 6rem;
+  /* padding-left: 6rem; */
+  padding: 2rem;
 }
 
 /* All Sections */
 .pg-container > * {
   width: 100vw;
   height: 100vh;
-  background-color: var(--bg-clr);
+  max-width: 1000px;
 }
 
 @media (max-width: 600px) {
