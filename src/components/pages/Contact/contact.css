@@ -2,9 +2,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   gap: 1rem;
 }
-#contact > .card {
+.tech-stack-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#tech-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 280px;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+#tech-list > * {
+  height: 32px;
+  width: 32px;
+}
+#contact .card {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   background-color: var(--global-bg-clr);
   padding: 1rem;
@@ -16,7 +38,14 @@
 }
 #contact h2 {
   margin-bottom: 1rem;
-  color: var(--primary-clr);
+}
+
+#about > p {
+  height: 200px;
+  overflow-y: scroll;
+  padding: 0rem 0.5rem;
+  text-align: justify;
+  margin-bottom: 1rem;
 }
 form {
   border-radius: 1rem;
@@ -50,4 +79,13 @@ form > button:hover {
   border-color: var(--primary-clr);
   letter-spacing: 3px;
   filter: opacity(0.9);
+}
+
+@media (max-width: 600px) {
+  #contact {
+    flex-direction: column-reverse;
+  }
+  #contact .card {
+    width: 90%;
+  }
 }

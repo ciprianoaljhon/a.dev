@@ -11,8 +11,8 @@ export const useVisibility = () => {
 
 export const useThemeChanger = () => {
   const body = document.getElementById("root");
-  const themes = ["theme-1", "theme-2", "theme-3", "theme-4"];
-  const [theme, setTheme] = useState("theme-2");
+  let themes = ["theme-1", "theme-2", "theme-3", "theme-4"];
+  const [theme, setTheme] = useState(generateTheme());
 
   const toggleTheme = () => {
     setTheme(generateTheme());
@@ -20,7 +20,6 @@ export const useThemeChanger = () => {
 
   function generateTheme() {
     let themeNo = Math.floor(Math.random() * themes.length);
-
     return themes[themeNo];
   }
 

@@ -1,12 +1,12 @@
 {
-  "homepage" : "https://ciprianoaljhon.github.io/a.dev",
+  "homepage": "https://ciprianoaljhon.github.io/a.dev",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -16,6 +16,7 @@
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-responsive": "^9.0.2"
   },
   "devDependencies": {

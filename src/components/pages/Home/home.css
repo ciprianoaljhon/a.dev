@@ -52,7 +52,6 @@
 }
 @media (max-width: 600px) {
   .hero-wrapper {
-    padding: 1rem;
     margin: 0rem;
   }
   .hero-logo {

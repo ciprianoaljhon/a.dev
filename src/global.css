@@ -66,7 +66,14 @@ body {
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-clr);
+}
 ul {
   list-style: none;
 }
