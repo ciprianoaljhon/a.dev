@@ -2,16 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   gap: 1rem;
 }
-.tech-stack-wrapper {
+.list-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#tech-list {
+.custom-list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +19,7 @@
   margin-top: 0.5rem;
   flex-wrap: wrap;
 }
-#tech-list > * {
+.custom-list * {
   height: 32px;
   width: 32px;
 }
@@ -67,12 +66,13 @@ form > * {
   border: 1px solid var(--fg-clr);
 }
 form > textarea {
-  resize: vertical;
+  resize: none;
 }
 form > button {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-bottom: 0.5rem;
 }
 
 form > button:hover {
@@ -82,10 +82,20 @@ form > button:hover {
 }
 
 @media (max-width: 600px) {
-  #contact {
-    flex-direction: column-reverse;
-  }
   #contact .card {
     width: 90%;
+    min-width: 280px;
+  }
+  .tab {
+    margin-bottom: 1rem;
+  }
+  .tab button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+  }
+  .tab > button:hover {
+    background-color: var(--primary-clr);
+    filter: opacity(0.9);
   }
 }

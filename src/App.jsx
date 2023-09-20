@@ -8,14 +8,13 @@ import About from "./components/pages/About/About.jsx";
 import Navbar from "./components/pages/Navigation/Navbar.jsx";
 
 const App = () => {
-  console.log("renders");
-
   const theme = useThemeChanger();
-  //create a react memo for unnecessary render
+  // document.addEventListener("contextmenu", (event) => {
+  //   event.preventDefault();
+  // });
   return (
     <div id="main-container" data-theme={theme}>
       {/* <Navbar></Navbar> */}
-
       <div className="pg-container">
         <Home></Home>
         <Projects></Projects>

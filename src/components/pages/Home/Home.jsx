@@ -10,8 +10,8 @@ function Home() {
         <Logo className="hero-logo"></Logo>
         <Header></Header>
         <div className="btn-grp">
-          <Buttons>Contact Me</Buttons>
-          <Buttons>Facebook</Buttons>
+          <Buttons active={true}>Contact Me</Buttons>
+          <Buttons active={false}>Facebook</Buttons>
         </div>
       </div>
     </section>

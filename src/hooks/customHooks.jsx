@@ -1,8 +1,20 @@
 import { useState, useEffect } from "react";
-export const useVisibility = () => {
-  const [state, setState] = useState(false);
 
-  const toggleState = () => {
+let prevClick = "";
+export const useVisibility = (toggle = true, activeButton) => {
+  const [state, setState] = useState(true);
+
+  //useMemo here
+  const toggleState = (e) => {
+    if (!toggle) {
+      if (prevClick === "") {
+        prevClick = e.target.innerText;
+        if (prevClick === activeButton) return;
+      } else if (prevClick === e.target.innerText) {
+        return;
+      }
+    }
+    prevClick = e.target.innerText;
     setState(!state);
   };
 
