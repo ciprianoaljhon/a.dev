@@ -1,6 +1,14 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaJava } from "react-icons/fa6";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaJava,
+  FaNodeJs,
+} from "react-icons/fa6";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { DiMysql, DiPython } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
 import List from "../../List";
 
 const TechStack = () => {
@@ -16,6 +24,8 @@ const TechStack = () => {
         <FaJava></FaJava>
         <DiMysql></DiMysql>
         <DiPython></DiPython>
+        <FaNodeJs></FaNodeJs>
+        <SiExpress></SiExpress>
       </List>
     </div>
   );

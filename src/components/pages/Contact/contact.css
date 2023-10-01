@@ -86,6 +86,9 @@ form > button:hover {
     width: 90%;
     min-width: 280px;
   }
+  #contact > .card {
+    height: 400px;
+  }
   .tab {
     margin-bottom: 1rem;
   }
